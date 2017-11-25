@@ -3,6 +3,7 @@ import {Component} from '@angular/core';
 
 import { TeamComponent } from './team.component';
 import { TeamDetailComponent } from '../team-detail/team-detail.component';
+import { MemberComponent } from '../member/member.component';
 
 describe('TeamComponent', () => {
   let component: TeamComponent;
@@ -12,7 +13,8 @@ describe('TeamComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         TeamComponent,
-        TeamDetailComponent
+        TeamDetailComponent,
+        MemberComponent
       ]
     })
     .compileComponents();

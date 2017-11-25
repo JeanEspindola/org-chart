@@ -1,10 +1,11 @@
 <div>
 
-  <h2>{{ teamData.team }}</h2>
+  <h2>{{ teamData?.team }}</h2>
 
-  <h3>Location: {{ teamData.location }}</h3>
+  <h3>Location: {{ teamData?.location }}</h3>
 
 <!--
-  <app-team-detail></app-team-detail>
+  <app-team-detail [membersList]="teamData?.members"></app-team-detail>
 -->
+
 </div>

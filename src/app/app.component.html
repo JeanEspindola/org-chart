@@ -7,6 +7,6 @@
   {{ organization.location }}
 </div>
 
-<div *ngFor='let test of organization.teams'>
-  <app-team [teamData]="test"></app-team>
+<div *ngFor='let team of organization.teams'>
+  <app-team [teamData]="team"></app-team>
 </div>

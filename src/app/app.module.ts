@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { TeamComponent } from './team/team.component';
 import { TeamDetailComponent } from './team-detail/team-detail.component';
 import { MemberComponent } from './member/member.component';
-import { TeamService } from './team.service';
+import { OrganizationService } from './organization.service';
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import { TeamService } from './team.service';
   imports: [
     BrowserModule
   ],
-  providers: [ TeamService ],
+  providers: [ OrganizationService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

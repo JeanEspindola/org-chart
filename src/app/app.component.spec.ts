@@ -3,6 +3,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { TeamComponent } from './team/team.component';
 import { TeamDetailComponent } from './team-detail/team-detail.component';
+import { MemberComponent } from './member/member.component';
 import { OrganizationService } from './organization.service';
 
 describe('AppComponent', () => {
@@ -11,7 +12,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         TeamComponent,
-        TeamDetailComponent
+        TeamDetailComponent,
+        MemberComponent
       ],
       providers: [OrganizationService]
     }).compileComponents();

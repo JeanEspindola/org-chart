@@ -10,18 +10,17 @@ import { OrganizationService } from './organization.service';
 
 export class AppComponent implements OnInit {
 
-  data: Organization;
+  organization: Organization;
   title = 'Org Chart';
 
   constructor(private organizationService: OrganizationService) { }
 
   ngOnInit() {
-    this.getTeamsData();
+   this.getOrganizationData();
   }
 
-  getTeamsData(): void {
-    this.organizationService.getTeams()
-      .subscribe(data => this.data = data);
-    console.log(this.data);
+  getOrganizationData(): void {
+    this.organizationService.getOrganization()
+      .subscribe(organization => this.organization = organization);
   }
 }

@@ -10,8 +10,7 @@ export class OrganizationService {
 
   constructor() { }
 
-  getTeams(): Observable<Organization> {
+  getOrganization(): Observable<Organization> {
     return of(ORGANIZATION);
   }
-
 }

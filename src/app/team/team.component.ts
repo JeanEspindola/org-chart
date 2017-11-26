@@ -9,10 +9,15 @@ import { Team } from '../team';
 })
 export class TeamComponent implements OnInit {
   @Input() teamData: Team;
+  expanded = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onDetailClick(): void {
+    this.expanded = !this.expanded;
   }
 
 }

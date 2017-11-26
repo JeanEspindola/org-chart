@@ -1,9 +1,10 @@
 <div>
 
-  <h2>{{ teamData?.team }}</h2>
+  <div (click)="onDetailClick()">
+    <h2>{{ teamData?.team }}</h2>
+    <h3>Location: {{ teamData?.location }}</h3>
+  </div>
 
-  <h3>Location: {{ teamData?.location }}</h3>
-
-  <app-team-detail [membersList]="teamData?.members"></app-team-detail>
+  <app-team-detail *ngIf="expanded" [membersList]="teamData?.members"></app-team-detail>
 
 </div>

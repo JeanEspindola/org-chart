@@ -29,4 +29,10 @@ describe('TeamComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should expand/collapse', () => {
+    component.expanded = true;
+    component.onDetailClick();
+    expect(component.expanded).toBeFalsy();
+  });
 });

@@ -3,5 +3,14 @@
 
   .card-img {
     height: 225px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
   }
 }

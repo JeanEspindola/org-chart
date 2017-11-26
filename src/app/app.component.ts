@@ -11,7 +11,7 @@ import { OrganizationService } from './organization.service';
 export class AppComponent implements OnInit {
 
   organization: Organization;
-  title = 'Org Chart';
+  title = 'Organization Chart';
 
   constructor(private organizationService: OrganizationService) { }
 

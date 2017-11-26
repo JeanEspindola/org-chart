@@ -7,6 +7,7 @@ export const ORGANIZATION: Organization = {
     {
       'team': 'Lobster Tech',
       'location': 'Amsterdam',
+      'picture': 'amsterdam.jpg',
       'members': [
         {
           'name': 'Ben Samuel',
@@ -28,6 +29,7 @@ export const ORGANIZATION: Organization = {
     {
       'team': 'Lobster Ink',
       'location': 'Cape Town',
+      'picture': 'cape-town.jpg',
       'members': [
         {
           'name': 'Sam Jones',

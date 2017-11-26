@@ -1,19 +1,21 @@
-<div class="app-component">
-  <div class="row">
-    <div class="col-md-12">
-      <img width="300" alt="Lobster" src="assets/Lobster_Logo_dark.svg">
+<div class="container app-component">
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <img width="300" alt="Lobster" src="assets/Lobster_Logo_dark.svg">
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-12">
-      <h1>{{ title }}</h1>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{ title }}</h1>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-12">{{ organization.organization }}</div>
-    <div class="col-md-12">Headquarters: {{ organization.location }}</div>
+    <div class="row organization">
+      <div class="col-md-12">{{ organization.organization }}</div>
+      <div class="col-md-12">Headquarters: {{ organization.location }}</div>
+    </div>
   </div>
 
   <div class="row">

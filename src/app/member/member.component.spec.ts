@@ -18,7 +18,7 @@ describe('MemberComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(MemberComponent);
     component = fixture.componentInstance;
-    expectedMember = {name: 'Jean Espindola', age: 33, imageUrl: 'http://jeanespindola.pic'};
+    expectedMember = {name: 'Jean Espindola', age: 33, role: 'Software Engineer', imageUrl: 'http://jeanespindola.pic'};
     component.member = expectedMember;
     fixture.detectChanges();
   });
@@ -36,7 +36,13 @@ describe('MemberComponent', () => {
   it('should display member age', () => {
     const expectedMemberAge = expectedMember.age;
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('p').textContent).toContain('Age: ' + expectedMemberAge);
+    expect(compiled.querySelector('#age').textContent).toContain('Age: ' + expectedMemberAge);
+  });
+
+  it('should display member role', () => {
+    const expectedMemberRole = expectedMember.role;
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('#role').textContent).toContain(expectedMemberRole);
   });
 
   it('should display member picture', () => {

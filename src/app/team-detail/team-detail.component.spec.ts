@@ -23,8 +23,8 @@ describe('TeamDetailComponent', () => {
     fixture = TestBed.createComponent(TeamDetailComponent);
     component = fixture.componentInstance;
     expectedMemberList = [
-      {name: 'Jean Espindola', age: 33, imageUrl: 'http://jeanespindola.pic'},
-      {name: 'Maiara Espindola', age: 28, imageUrl: 'http://maiaraespindola.pic'}
+      {name: 'Jean Espindola', age: 33, imageUrl: 'http://jeanespindola.pic', role: 'Software Engineer'},
+      {name: 'Maiara Espindola', age: 28, imageUrl: 'http://maiaraespindola.pic', role: 'Product Owner'}
     ];
     component.membersList = expectedMemberList;
     fixture.detectChanges();

@@ -1,5 +1,9 @@
-<div class="card">
-  <img class="card-img-top" src="{{member.imageUrl}}">
-  <h5 class="card-title">{{ member.name }}</h5>
-  <p class="card-text"><small class="text-muted">Age: {{ member.age }}</small></p>
+<div class="row member-info bg-light border-light">
+  <div class="col-5 col-sm-4 col-md-5 col-lg-4">
+    <img class="member-image" src="{{member.imageUrl}}">
+  </div>
+  <div class="col-7 col-sm-8 col-md-7 col-lg-8">
+    <h5>{{ member.name }}</h5>
+    <p><small class="text-muted">Age: {{ member.age }}</small></p>
+  </div>
 </div>

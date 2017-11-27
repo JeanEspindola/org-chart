@@ -51,6 +51,12 @@ describe('TeamComponent', () => {
     expect(compiled.querySelector('h6').textContent).toContain('Location: ' + expectedTeamLocation);
   });
 
+  it('should display team location picture', () => {
+    const expectedTeamImage = expectedTeamData.picture;
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('img').src).toContain(expectedTeamImage);
+  });
+
   it('should expand/collapse', () => {
     component.expanded = true;
     component.onDetailClick();

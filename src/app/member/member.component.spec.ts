@@ -38,4 +38,10 @@ describe('MemberComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('p').textContent).toContain('Age: ' + expectedMemberAge);
   });
+
+  it('should display member picture', () => {
+    const expectedMemberImage = expectedMember.imageUrl;
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('img').src).toContain(expectedMemberImage);
+  });
 });

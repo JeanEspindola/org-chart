@@ -4,10 +4,12 @@ import {Component} from '@angular/core';
 import { TeamComponent } from './team.component';
 import { TeamDetailComponent } from '../team-detail/team-detail.component';
 import { MemberComponent } from '../member/member.component';
+import { Team } from '../team';
 
 describe('TeamComponent', () => {
   let component: TeamComponent;
   let fixture: ComponentFixture<TeamComponent>;
+  let expectedTeamData: Team;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -23,6 +25,13 @@ describe('TeamComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(TeamComponent);
     component = fixture.componentInstance;
+    expectedTeamData = {
+      team: 'Tech',
+      location: 'Amsterdam',
+      picture: 'www.picture.com',
+      members: []
+    };
+    component.teamData = expectedTeamData;
     fixture.detectChanges();
   });
 

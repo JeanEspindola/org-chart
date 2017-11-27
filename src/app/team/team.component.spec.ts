@@ -39,6 +39,18 @@ describe('TeamComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  it('should display team name', () => {
+    const expectedTeamName = expectedTeamData.team.toUpperCase();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h4').textContent).toContain(expectedTeamName);
+  });
+
+  it('should display team location', () => {
+    const expectedTeamLocation = expectedTeamData.location;
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h6').textContent).toContain('Location: ' + expectedTeamLocation);
+  });
+
   it('should expand/collapse', () => {
     component.expanded = true;
     component.onDetailClick();

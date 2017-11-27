@@ -26,4 +26,16 @@ describe('MemberComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should display member name', () => {
+    const expectedMemberName = expectedMember.name;
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h5').textContent).toContain(expectedMemberName);
+  });
+
+  it('should display member age', () => {
+    const expectedMemberAge = expectedMember.age;
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('p').textContent).toContain('Age: ' + expectedMemberAge);
+  });
 });
